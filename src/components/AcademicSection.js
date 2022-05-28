@@ -32,6 +32,7 @@ export default class AcademicSection extends Component {
     this.onChangeEdit = this.onChangeEdit.bind(this)
     this.onClickSubmit = this.onClickSubmit.bind(this)
     this.onClickCancel = this.onClickCancel.bind(this)
+    this.onClickDelete = this.onClickDelete.bind(this)
   }
 
 
@@ -97,8 +98,8 @@ export default class AcademicSection extends Component {
     // new value for the property changed:
     const newPropValue = e.target.value;
     // update the property in the state,
-    // (... is spreading the existing state.general in the 
-    // new state.general, except the changed property)
+    // (... is spreading the existing state.item in the 
+    // new state.item, except the changed property)
     this.setState({
       item: {
         ...this.state.item,

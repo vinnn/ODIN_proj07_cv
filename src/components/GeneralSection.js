@@ -12,9 +12,9 @@ export default class GeneralSection extends Component {
 
     this.state = {
         general: {
-          name: "Dude",
-          email: "du@de",
-          phone: "111223",
+          name: "",
+          email: "",
+          phone: "",
           editMode: false,
         },
   
@@ -43,7 +43,7 @@ export default class GeneralSection extends Component {
         editMode: !this.state.general.editMode
         }
       })
-      
+
     // make a copy of the state if needed for onClickCancel
     this.copyState = {...this.state};
   }

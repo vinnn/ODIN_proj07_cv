@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './styles/App.css';
-import uniqid from 'uniqid';
 import GeneralSection from './components/GeneralSection';
 import AcademicSection from './components/AcademicSection';
 import ProfessionalSection from './components/ProfessionalSection';
@@ -14,7 +13,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="div-cont">
 
         <h1 className="cv-title">New Flash CiVi</h1>
 
@@ -22,7 +21,7 @@ class App extends Component {
 
         <AcademicSection></AcademicSection>
 
-        {/* <ProfessionalSection></ProfessionalSection> */}
+        <ProfessionalSection></ProfessionalSection>
 
       </div>
     )
