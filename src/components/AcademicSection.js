@@ -40,30 +40,33 @@ export default class AcademicSection extends Component {
   // FUNCTIONS - TO UPDATE THE STATES
   // ##########################################
 
-
-  // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ON CLICK ADD  [DONE]
+  // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ON CLICK ADD 
   onClickAdd = (e) => {
     // turn all items to non-edited mode (only one item should be 
     // edited at a time)
     this.setState( {
       item: {...this.state.item},
-      itemList: this.state.itemList.map( itemi => { return ({...itemi, editMode: false})  } )
+      itemList: this.state.itemList.map( itemi => 
+                        { return ({...itemi, editMode: false})  } )
     }, () => { // since the state updates can be unsynchronous:
 
         // adds an item block with empty fields (in edit mode):
-          const emptyItem = {school: "", title: "", year: "", editMode: false, uid: uniqid()};
+          const emptyItem = {
+                school: "", 
+                title: "", 
+                year: "", 
+                editMode: false, 
+                uid: uniqid()
+          };
           this.setState({
             item: emptyItem,
             itemList: this.state.itemList.concat(emptyItem)
-          }, () => {
-            // console.log(this.state)  // update of the state is asynchronous
           });
-
     });
 
   }
 
-  // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ON CLICK EDIT   [DONE]
+  // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ON CLICK EDIT 
   onClickEdit = (e) => {
     // id of the item selected:
     const itemKey = e.target.attributes.uid.value;
@@ -91,7 +94,7 @@ export default class AcademicSection extends Component {
 
   }
 
-  // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ON CHANGE EDIT     [DONE]
+  // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ON CHANGE EDIT
   onChangeEdit = (e) => {
     // name (in the state) of the property changed:
     const statePropName = e.target.attributes.name.value;
@@ -108,7 +111,7 @@ export default class AcademicSection extends Component {
     })
   }
 
-  // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ON CLICK SUBMIT      [DONE]
+  // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ON CLICK SUBMIT 
   onClickSubmit = (e) => {
     // id of the item selected:
     const itemKey = e.target.attributes.uid.value;
@@ -128,7 +131,6 @@ export default class AcademicSection extends Component {
       )
     })
   }
-
 
   // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ON CLICK CANCEL  
   onClickCancel = (e) => {
@@ -162,7 +164,6 @@ export default class AcademicSection extends Component {
       onClickDelete: this.onClickDelete
     };
 
-
     return (
       <div className="div-academic">
 
@@ -183,20 +184,7 @@ export default class AcademicSection extends Component {
       </div>
     )
   }
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
 
 
 export class Item extends Component {
@@ -212,7 +200,6 @@ export class Item extends Component {
 
     return (
       <div className="div-item">
-
         <div>
             { editMode 
                 ?   <ItemEdit 
@@ -235,22 +222,10 @@ export class Item extends Component {
                     </ItemDisplay>
             }
         </div>
-
       </div>
     )
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 export class ItemDisplay extends Component {
@@ -287,8 +262,6 @@ export class ItemDisplay extends Component {
     )
   }
 }
-
-
 
 
 export class ItemEdit extends Component {
