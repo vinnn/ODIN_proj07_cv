@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ODIN_cv/static/css/main.d9017666.css",
-    "main.js": "/ODIN_cv/static/js/main.528de078.js",
-    "static/js/787.34a20539.chunk.js": "/ODIN_cv/static/js/787.34a20539.chunk.js",
-    "index.html": "/ODIN_cv/index.html",
-    "main.d9017666.css.map": "/ODIN_cv/static/css/main.d9017666.css.map",
-    "main.528de078.js.map": "/ODIN_cv/static/js/main.528de078.js.map",
-    "787.34a20539.chunk.js.map": "/ODIN_cv/static/js/787.34a20539.chunk.js.map"
+    "main.css": "/ODIN_proj07_cv/static/css/main.d9017666.css",
+    "main.js": "/ODIN_proj07_cv/static/js/main.60165505.js",
+    "static/js/787.34a20539.chunk.js": "/ODIN_proj07_cv/static/js/787.34a20539.chunk.js",
+    "index.html": "/ODIN_proj07_cv/index.html",
+    "main.d9017666.css.map": "/ODIN_proj07_cv/static/css/main.d9017666.css.map",
+    "main.60165505.js.map": "/ODIN_proj07_cv/static/js/main.60165505.js.map",
+    "787.34a20539.chunk.js.map": "/ODIN_proj07_cv/static/js/787.34a20539.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d9017666.css",
-    "static/js/main.528de078.js"
+    "static/js/main.60165505.js"
   ]
 }
