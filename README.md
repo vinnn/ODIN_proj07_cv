@@ -10,7 +10,7 @@ This project is to practice the concepts learned in the Odin Project - Full Stac
 - Git/Github
 
 ## View page
-https://vinnn.github.io/ODIN_cv/
+https://vinnn.github.io/ODIN_proj07_cv/
 
 ## Thank you
 Thank you the Odin Project
